@@ -1,0 +1,121 @@
+//=============================================================================
+// ROHeli_UH1H_Aus_Guns_Content
+//=============================================================================
+// Content for the UH-1H Iroquois "Bushranger" Gunship/Transport Helicopter, Australian paintjob
+//=============================================================================
+//  DirtyGrandpa
+//=============================================================================
+class ROHeli_UH1H_Gunspax_Aus_Content extends ROHeli_UH1H_Gunspax_US_Content
+	placeable;
+
+DefaultProperties
+{
+	Begin Object Name=ROSVehicleMesh
+		//SkeletalMesh=SkeletalMesh'VH_VN_US_UH1H.Mesh.US_UH1H_Rig_Master'
+		Materials(0)=MaterialInstanceConstant'VH_VN_AUS_Bushranger_pax.Materials.M_Bushranger'
+	End Object
+
+	DestroyedMaterial=MaterialInstanceConstant'VH_VN_AUS_Bushranger.Materials.M_Bushranger_Damaged'
+
+	// Pilot
+	SeatProxies(0)={(
+		TunicMeshType=SkeletalMesh'CHR_VN_AUS.Mesh.AUS_Tunic_Pilot_Mesh',
+		HeadGearMeshType=SkeletalMesh'CHR_VN_AUS_Headgear.PilotMesh.AUS_Headgear_Pilot_Base_Up',
+		HeadAndArmsMeshType=SkeletalMesh'CHR_VN_US_Heads.Mesh.US_Head2_Mesh',
+		HeadphonesMeshType=none,
+		HeadAndArmsMICTemplate=MaterialInstanceConstant'CHR_VN_US_Heads.Materials.M_US_Head_02_Pilot_INST',
+		BodyMICTemplate=MaterialInstanceConstant'CHR_VN_AUS.Materials.M_AUS_Tunic_Pilot_A_INST',
+		HeadgearSocket=helmet,
+		SeatIndex=0,
+		PositionIndex=0,
+		bExposedToRain=false)}
+
+	// Copilot
+	SeatProxies(1)={(
+		TunicMeshType=SkeletalMesh'CHR_VN_AUS.Mesh.AUS_Tunic_Pilot_Mesh',
+		HeadGearMeshType=SkeletalMesh'CHR_VN_AUS_Headgear.PilotMesh.AUS_Headgear_Pilot_Base_Up',
+		HeadAndArmsMeshType=SkeletalMesh'CHR_VN_US_Heads.Mesh.US_Head3_Mesh',
+		HeadphonesMeshType=none,
+		HeadAndArmsMICTemplate=MaterialInstanceConstant'CHR_VN_US_Heads.Materials.M_US_Head_03_Pilot_INST',
+		BodyMICTemplate=MaterialInstanceConstant'CHR_VN_AUS.Materials.M_AUS_Tunic_Pilot_A_INST',
+		HeadgearSocket=helmet,
+		SeatIndex=1,
+		PositionIndex=0,
+		bExposedToRain=false)}
+
+	// Crew Chief
+	SeatProxies(2)={(
+		TunicMeshType=SkeletalMesh'CHR_VN_AUS.Mesh.AUS_Tunic_Pilot_Mesh',
+		HeadGearMeshType=SkeletalMesh'CHR_VN_AUS_Headgear.PilotMesh.AUS_Headgear_Pilot_Base',
+		HeadAndArmsMeshType=SkeletalMesh'CHR_VN_US_Heads.Mesh.US_Head1_Mesh',
+		HeadphonesMeshType=none,
+		HeadAndArmsMICTemplate=MaterialInstanceConstant'CHR_VN_US_Heads.Materials.M_US_Head_01_Pilot_INST',
+		BodyMICTemplate=MaterialInstanceConstant'CHR_VN_AUS.Materials.M_AUS_Tunic_Pilot_A_INST',
+		HeadgearSocket=helmet,
+		SeatIndex=2,
+		PositionIndex=0,
+		bExposedToRain=true)}
+
+	// Door Gunner
+	SeatProxies(3)={(
+		TunicMeshType=SkeletalMesh'CHR_VN_AUS.Mesh.AUS_Tunic_Pilot_Mesh',
+		HeadGearMeshType=SkeletalMesh'CHR_VN_AUS_Headgear.PilotMesh.AUS_Headgear_Pilot_Base',
+		HeadAndArmsMeshType=SkeletalMesh'CHR_VN_US_Heads.Mesh.US_Head2_Mesh',
+		HeadphonesMeshType=none,
+		HeadAndArmsMICTemplate=MaterialInstanceConstant'CHR_VN_US_Heads.Materials.M_US_Head_02_Pilot_INST',
+		BodyMICTemplate=MaterialInstanceConstant'CHR_VN_AUS.Materials.M_AUS_Tunic_Pilot_A_INST',
+		HeadgearSocket=helmet,
+		SeatIndex=3,
+		PositionIndex=0,
+		bExposedToRain=true)}
+
+	// Passenger 1
+	SeatProxies(4)={(
+		TunicMeshType=SkeletalMesh'CHR_VN_AUS.Mesh.AUS_Tunic_Long_Mesh',
+		HeadGearMeshType=SkeletalMesh'CHR_VN_AUS_Headgear.Mesh.AUS_Headgear_GiggleDown',
+		HeadAndArmsMeshType=SkeletalMesh'CHR_VN_US_Heads.Mesh.US_Head3_Mesh',
+		HeadphonesMeshType=none,
+		HeadAndArmsMICTemplate=MaterialInstanceConstant'CHR_VN_US_Heads.Materials.M_US_Head_03_Long_INST',
+		BodyMICTemplate=MaterialInstanceConstant'CHR_VN_AUS.Materials.M_AUS_Tunic_Long_INST',
+		SeatIndex=4,
+		PositionIndex=0,
+		bExposedToRain=false)}
+
+	// Passenger 2
+	SeatProxies(5)={(
+		TunicMeshType=SkeletalMesh'CHR_VN_AUS.Mesh.AUS_Tunic_Long_Mesh',
+		HeadGearMeshType=SkeletalMesh'CHR_VN_AUS_Headgear.Mesh.AUS_Headgear_GiggleDown',
+		HeadAndArmsMeshType=SkeletalMesh'CHR_VN_US_Heads.Mesh.US_Head3_Mesh',
+		HeadphonesMeshType=none,
+		HeadAndArmsMICTemplate=MaterialInstanceConstant'CHR_VN_US_Heads.Materials.M_US_Head_03_Long_INST',
+		BodyMICTemplate=MaterialInstanceConstant'CHR_VN_AUS.Materials.M_AUS_Tunic_Long_INST',
+		SeatIndex=5,
+		PositionIndex=0,
+		bExposedToRain=false)}
+
+	// Passenger 3
+	SeatProxies(6)={(
+		TunicMeshType=SkeletalMesh'CHR_VN_AUS.Mesh.AUS_Tunic_Long_Mesh',
+		HeadGearMeshType=SkeletalMesh'CHR_VN_AUS_Headgear.Mesh.AUS_Headgear_GiggleDown',
+		HeadAndArmsMeshType=SkeletalMesh'CHR_VN_US_Heads.Mesh.US_Head3_Mesh',
+		HeadphonesMeshType=none,
+		HeadAndArmsMICTemplate=MaterialInstanceConstant'CHR_VN_US_Heads.Materials.M_US_Head_03_Long_INST',
+		BodyMICTemplate=MaterialInstanceConstant'CHR_VN_AUS.Materials.M_AUS_Tunic_Long_INST',
+		SeatIndex=6,
+		PositionIndex=0,
+		bExposedToRain=false)}
+
+	// Passenger 4
+	SeatProxies(7)={(
+		TunicMeshType=SkeletalMesh'CHR_VN_AUS.Mesh.AUS_Tunic_Long_Mesh',
+		HeadGearMeshType=SkeletalMesh'CHR_VN_AUS_Headgear.Mesh.AUS_Headgear_GiggleDown',
+		HeadAndArmsMeshType=SkeletalMesh'CHR_VN_US_Heads.Mesh.US_Head3_Mesh',
+		HeadphonesMeshType=none,
+		HeadAndArmsMICTemplate=MaterialInstanceConstant'CHR_VN_US_Heads.Materials.M_US_Head_03_Long_INST',
+		BodyMICTemplate=MaterialInstanceConstant'CHR_VN_AUS.Materials.M_AUS_Tunic_Long_INST',
+		SeatIndex=7,
+		PositionIndex=0,
+		bExposedToRain=false)}
+
+
+}
